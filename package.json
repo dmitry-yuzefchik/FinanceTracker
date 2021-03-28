@@ -4,10 +4,12 @@
   "description": "Finance tracking PWA",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --open chrome",
+    "dev": "webpack serve --open chrome --https",
     "build": "webpack --mode production",
     "start": "npm run dev",
-    "test": "jest"
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [
     "react",
@@ -25,6 +27,10 @@
     "@babel/core": "^7.13.13",
     "@babel/preset-env": "^7.13.12",
     "@babel/preset-react": "^7.13.13",
+    "@storybook/addon-actions": "^6.1.21",
+    "@storybook/addon-essentials": "^6.1.21",
+    "@storybook/addon-links": "^6.1.21",
+    "@storybook/react": "^6.1.21",
     "@types/jest": "^26.0.22",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
